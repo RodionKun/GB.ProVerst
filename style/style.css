@@ -55,6 +55,12 @@ body {
 .basket-logo {
     padding-top: 30px;
 }
+.svg-logo {
+    fill: #E8E8E8;
+}
+.svg-logo:hover {
+    fill: #F16D7F;
+}
 
 /* Блок с мужиком и главным заголовком */
 
@@ -95,6 +101,7 @@ body {
 
 .categories-wrap {
     margin-top: 65px;
+    margin-bottom: 96px;
 }
 .cat-text {
     position: absolute;
@@ -137,7 +144,6 @@ body {
 
 .products {
     background-color: #fff;
-    margin-top: 96px;
 }
 .products-wrap {
     display: flex;
@@ -207,6 +213,35 @@ body {
     margin-top: 48px;
     margin-bottom: 95px;
 }
+.products-but:hover {
+    color: #FFFFFF;
+    background-color: #FF6A6A;
+}
+
+/* Пагинация */
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 48px 0 96px 0;
+}
+.pagination-list {
+    border: 1px solid #EBEBEB;
+    padding: 12px 40px;
+}
+.pagination-list a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #C4C4C4;
+    padding: 0 7px;
+}
+.pagination-list a:nth-child(2) {
+    color: #EF5B70;
+}
+.pagination-list a:hover {
+    color: #EF5B70;
+}
 
 /* Преимущества */
 
@@ -240,11 +275,17 @@ body {
     align-items: center;
     margin: 104px 30px;
 }
+.benefits-img {
+    height: 40px;
+    text-align: center;
+}
 
 /* Цитата и форма обратной связи */
 
 .feedback {
     background-image: url("../img/subscribe-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .feedback-wrap {
     display: flex;
@@ -320,13 +361,27 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.social-flex {
+.social {
     display: flex;
-    list-style-type: none;
-    margin-top: 24px;
+    justify-content: flex-end;
+    margin: 24px 0;
 }
-.social-pad {
-    padding-right: 8px;
+.social-link {
+    color: #000;
+    text-decoration: none;
+    font-size:19px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-left: 8px;
+    width: 35px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-link:hover {
+    color: #FFFFFF;
+    background-color: #F16D7F;
 }
 .copy {
     font-size: 16px;
@@ -367,12 +422,62 @@ body {
     text-decoration: none;
     color: #636363;
 }
+.arrivals-tabs ul li a:hover {
+    color: #F16D7F;
+}
 .tab-red {
     color: #F16D7F;
     font-weight: 700;
 }
 
 /* Блок с каталогом товаров */
+.products-filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    margin-top: 51px;
+}
+.title-filter {
+    padding-left: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.title-filter:hover {
+    color: #EF5B70;
+    fill: #EF5B70;
+}
+.filter-list ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style-type: none;
+    gap: 29px;
+    padding-right: 441px;
+}
+.filter-list-item {
+    text-decoration: none;
+    color: #6F6E6E;
+    font-size: 14px;
+    line-height: 17px;
+}
+.filter-check {
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.title-filter {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.filter-svg {
+    margin-left: 11px;
+}
 
 /*---- Страница регистрации ---- */
 
@@ -409,6 +514,7 @@ fieldset {
      width: 360px;
      height: 45px;
      margin: 15px 0;
+     padding: 0 5px;
  }
  label {
     font-weight: 300;
@@ -473,3 +579,131 @@ input::placeholder {
     padding: 0 0 16px 22px;
     margin-left: 27px;
 }
+
+/* Страница с продуктом */
+
+/* Карусель с девушкой */
+
+.carousel {
+    background-color: #F7F7F7;
+    position: relative;
+}
+.carousel-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-but {
+    border: none;
+    background: rgba(42, 42, 42, 0.15);
+    padding: 13px 18px;
+    display: flex;
+}
+.carousel-but:hover {
+    fill: #F16D7F;
+}
+.carousel-svg {
+    text-align: center;
+}
+
+/* описание и покупка товара */
+
+.description-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0;
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -35px;
+}
+.description-title-red {
+    color: #F16D7F;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 13px;
+}
+.description-title-border-red {
+    width: 63px;
+    background-color: #EF5B70;
+    border: 2px solid #EF5B70;
+}
+.description-title-border {
+    background-color: #EF5B70;
+    width: 63px;
+    height: 3px;
+    border: none;
+}
+.description-head{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    padding: 13px 0 49px 0;
+}
+.description-title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    padding-bottom: 33px;
+}
+.description-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding-bottom: 65px;
+}
+.description-title-grey {
+    background-color: #EAEAEA;
+    height: 1px;
+    width: 642px;
+}
+.description-filter-list {
+    padding: 65px 0 49px 0;
+}
+.description-filter-list ul {
+    display: flex;
+    list-style-type: none;
+    gap: 23px;
+}
+.description-filter-list-item {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.description-filter-check {
+    padding-left: 9px;
+}
+.description-buy {
+    padding: 13px 57px 9px 24px;
+    background-color: #fff;
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding-left: 23px;
+    display: flex;
+    align-items: center;
+    fill: #F26376;
+}
+.desc-buy-svg {
+    margin-right: 23px;
+}
+.description-buy:hover {
+    background-color: #F26376;
+    color: #fff;
+    fill: #fff;
+}
+
+/* другие товары */
+
+.product-margin {
+    padding: 63px 0 128px 0;
+}
+
