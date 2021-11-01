@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Переменные */
+
+@import url("../style/__var.scss");
+
+/* Миксины */
+
+@import url("../style/__mixins.scss");
+
+/* Общие */
+
+@import url("../style/__general.scss");
+
+/* Шапка сайта */
+
+@import url("../style/__header.scss");
+
+/* Блок с мужиком и главным заголовком */
+
+@import url("../style/__promo.scss");
+
+/* Блок с категориями товаров */
+
+@import url("../style/__categories.scss");
+
+/* Товары */
+
+@import url("../style/__products.scss");
+
+/* Пагинация */
+
+@import url("../style/__pagination.scss");
+
+/* Цитата и форма обратной связи */
+
+@import url("../style/__feedback.scss");
+
+/* Подвал */
+
+@import url("../style/__footer.scss");
+
+/* Страница "Каталог товаров" */
+
+/*Блок с поступлениями */
+
+.arrivals {
+    background-color: #F8F3F4;
+}
+.arrivals-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.new-arrivals {
+    color: #F16D7F;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    margin: 60px 0;
+}
+.arrivals-tabs ul {
+    display: flex;
+    gap: 4px;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 65px 0;
+}
+.arrivals-tabs ul li a {
+    text-decoration: none;
+    color: #636363;
+}
+.arrivals-tabs ul li a:hover {
+    color: #F16D7F;
+}
+.tab-red {
+    color: #F16D7F;
+    font-weight: 700;
+}
+
+/* Блок с каталогом товаров */
+.products-filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    margin-top: 51px;
+}
+.title-filter {
+    padding-left: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.title-filter:hover {
+    color: #EF5B70;
+    fill: #EF5B70;
+}
+.filter-list ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style-type: none;
+    gap: 29px;
+    padding-right: 441px;
+}
+.filter-list-item {
+    text-decoration: none;
+    color: #6F6E6E;
+    font-size: 14px;
+    line-height: 17px;
+}
+.filter-check {
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.title-filter {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.filter-svg {
+    margin-left: 11px;
+}
+
+/*---- Страница регистрации ---- */
+
+/* Блок с заголовком */
+
+.registration {
+    background-color: #F8F3F4;
+}
+.reg-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    font-weight: 400;
+    margin: 60px 0;
+}
+ /* Блок с регистрацией и описанием */
+
+@import url("../style/__registration.scss");
+
+/*--- Страница с продуктом --- */
+
+/* Карусель с девушкой */
+
+@import url("../style/__carousel.scss");
+
+/* описание и покупка товара */
+
+@import url("../style/__desc.scss");
+
+/*--- Страница "Shopping cart" --- */
+
+@import url("../style/__shoping-cart.scss");

@@ -1,0 +1,64 @@
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@mixin flex {
+    display: flex;
+}
+@mixin flex-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+@mixin title-text {
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+}
+@mixin desc-card-list {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    list-style-type: none;
+}
+@mixin desc-card-btn {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+@mixin shipping-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+@mixin shipping-table {
+    Width: 360px;
+    Height: 45px;
+    border: 1px solid #A4A4A4;
+    color: #222222;
+}
+@mixin shipping-placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+}
+@mixin btn-get {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    background-color: #ffffff;
+    border: 1px solid #A4A4A4;
+}
+@mixin total-hr {
+    color: #E2E2E2;
+    border: 1px solid #E2E2E2;
+}

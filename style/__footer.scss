@@ -1,0 +1,36 @@
+.footer {
+    background-color: #222;
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 0;
+}
+.social-link {
+    color: #000;
+    text-decoration: none;
+    font-size:19px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-left: 8px;
+    width: 35px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-link:hover {
+    color: #FFFFFF;
+    background-color: #F16D7F;
+}
+.copy {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    font-family: Lato;
+    margin: 30px 0;
+}
