@@ -1,84 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 /* Переменные */
 
-@import url("../style/__var.scss");
+@import "../style/_var";
 
 /* Миксины */
 
-@import url("../style/__mixins.scss");
+@import "../style/_mixins";
 
 /* Общие */
 
-@import url("../style/__general.scss");
+@import "blocks/_general";
 
 /* Шапка сайта */
 
-@import url("../style/__header.scss");
+@import "blocks/_header";
 
 /* Блок с мужиком и главным заголовком */
 
-@import url("../style/__promo.scss");
+@import "blocks/_promo";
 
 /* Блок с категориями товаров */
 
-@import url("../style/__categories.scss");
+@import "blocks/_categories";
 
 /* Товары */
 
-@import url("../style/__products.scss");
+@import "blocks/_products";
 
 /* Пагинация */
 
-@import url("../style/__pagination.scss");
+@import "blocks/_pagination";
 
 /* Цитата и форма обратной связи */
 
-@import url("../style/__feedback.scss");
+@import "blocks/_feedback";
 
 /* Подвал */
 
-@import url("../style/__footer.scss");
+@import "blocks/_footer";
 
 /* Страница "Каталог товаров" */
 
 /*Блок с поступлениями */
 
-.arrivals {
-    background-color: #F8F3F4;
-}
-.arrivals-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-.new-arrivals {
-    color: #F16D7F;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 400;
-    margin: 60px 0;
-}
-.arrivals-tabs ul {
-    display: flex;
-    gap: 4px;
-    list-style-type: none;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    margin: 65px 0;
-}
-.arrivals-tabs ul li a {
-    text-decoration: none;
-    color: #636363;
-}
-.arrivals-tabs ul li a:hover {
-    color: #F16D7F;
-}
-.tab-red {
-    color: #F16D7F;
-    font-weight: 700;
-}
+@import "blocks/_arrivals";
 
 /* Блок с каталогом товаров */
+
 .products-filter {
     display: flex;
     width: 100%;
@@ -143,18 +111,18 @@
 }
  /* Блок с регистрацией и описанием */
 
-@import url("../style/__registration.scss");
+@import "blocks/_registration";
 
 /*--- Страница с продуктом --- */
 
 /* Карусель с девушкой */
 
-@import url("../style/__carousel.scss");
+@import "blocks/_carousel";
 
 /* описание и покупка товара */
 
-@import url("../style/__desc.scss");
+@import "blocks/_desc";
 
 /*--- Страница "Shopping cart" --- */
 
-@import url("../style/__shoping-cart.scss");
+@import "blocks/_shoping-cart";

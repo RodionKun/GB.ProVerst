@@ -62,3 +62,13 @@
     color: #E2E2E2;
     border: 1px solid #E2E2E2;
 }
+@mixin position-product {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+}
+@mixin btn-tran {
+    cursor: pointer;
+    transition: 1s;
+}
