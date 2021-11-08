@@ -1,0 +1,98 @@
+.description-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0;
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -35px;
+}
+.description-title-red {
+    color: #F16D7F;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 13px;
+}
+.description-title-border-red {
+    width: 63px;
+    background-color: #EF5B70;
+    border: 2px solid #EF5B70;
+}
+.description-title-border {
+    background-color: #EF5B70;
+    width: 63px;
+    height: 3px;
+    border: none;
+}
+.description-head{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    padding: 13px 0 49px 0;
+}
+.description-title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    padding-bottom: 33px;
+}
+.description-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding-bottom: 65px;
+}
+.description-title-grey {
+    background-color: #EAEAEA;
+    height: 1px;
+    width: 642px;
+}
+.description-filter-list {
+    padding: 65px 0 49px 0;
+}
+.description-filter-list ul {
+    display: flex;
+    list-style-type: none;
+    gap: 23px;
+}
+.description-filter-list-item {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.description-filter-check {
+    padding-left: 9px;
+}
+.description-buy {
+    padding: 13px 57px 9px 24px;
+    background-color: #fff;
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding-left: 23px;
+    display: flex;
+    align-items: center;
+    fill: #F26376;
+}
+.desc-buy-svg {
+    margin-right: 23px;
+}
+.description-buy:hover {
+    background-color: #F26376;
+    color: #fff;
+    fill: #fff;
+}
+
+/* другие товары */
+
+.product-margin {
+    padding: 63px 0 128px 0;
+}

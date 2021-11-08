@@ -1,0 +1,40 @@
+.categories-wrap {
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+.cat-text {
+    position: absolute;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    top: 41%;
+    left: 37%;
+}
+.cat-text-bot {
+    top: 39%;
+    left: 42%;
+}
+.text-red {
+    color: #F16D7F;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+}
+.cat-parent {
+    display: flex;
+    justify-content: space-between;
+}
+.cat-item {
+    position: relative;
+}
+.cat-acces {
+    margin-top: 30px;
+}
+.cat-img {
+    width: 100%;
+}
+.categories {
+    background-color: #fff;
+}

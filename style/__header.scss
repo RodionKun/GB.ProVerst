@@ -1,0 +1,30 @@
+.header {
+    background-color: #222222;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-col-1 ul , .header-col-2 ul {
+    display: flex;
+    list-style-type: none;
+}
+.logo {
+    padding: 18px 41px 18px 0;
+}
+.find {
+    padding: 28px 0 20px 0;
+}
+.nav-logo {
+    padding: 30px 33px 22px 0;
+}
+.basket-logo {
+    padding-top: 30px;
+}
+.svg-logo {
+    fill: #E8E8E8;
+}
+.svg-logo:hover {
+    fill: #F16D7F;
+}

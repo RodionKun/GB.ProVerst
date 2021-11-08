@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Переменные */
+
+@import "../style/_var";
+
+/* Миксины */
+
+@import "../style/_mixins";
+
+/* Общие */
+
+@import "blocks/_general";
+
+/* Шапка сайта */
+
+@import "blocks/_header";
+
+/* Блок с мужиком и главным заголовком */
+
+@import "blocks/_promo";
+
+/* Блок с категориями товаров */
+
+@import "blocks/_categories";
+
+/* Товары */
+
+@import "blocks/_products";
+
+/* Преимущества */
+
+@import "blocks/_features";
+
+/* Пагинация */
+
+@import "blocks/_pagination";
+
+/* Цитата и форма обратной связи */
+
+@import "blocks/_feedback";
+
+/* Подвал */
+
+@import "blocks/_footer";
+
+/* Страница "Каталог товаров" */
+
+/*Блок с поступлениями */
+
+@import "blocks/_arrivals";
+
+/* Блок с каталогом товаров */
+.filter-nav {
+    width: 360px;
+    position: relative;
+
+    &-drop-hr {
+        border: 1px solid #EBEBEB;
+        width: 327px;
+        margin: 11px 0 -11px -11px;
+    }
+}
+.filter-nav[open] {
+    background-color: #fff;
+    z-index: 30;
+    box-shadow: $box-shadow;
+    position: relative;
+    display: flex;
+}
+.filter-nav[open] .title-filter {
+    color: #EF5B70;
+    fill: #EF5B70;
+}
+
+.products-filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    margin-top: 51px;
+}
+.title-filter {
+    padding-left: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #fff;
+    z-index: 30;
+}
+.filter-drop {
+    position: absolute;
+    z-index: 10;
+    width: 360px;
+    background-color: #fff;
+    padding-bottom: 16px;
+    box-shadow: $box-shadow;
+}
+.title-filter-drop {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    border-left: 5px solid #EF5B70;
+    padding: 11px 0 10px 11px;
+    margin: 16px 0 0 17px;
+}
+.filter-nav-drop[open] .title-filter-drop {
+    color: #EF5B70;
+}
+.title-filter-drop-list {
+    @include desc-card-btn;
+    @include flex-column;
+    gap: 11px;
+    padding-left: 34px;
+    padding-top: 23px;
+    & li {
+        list-style-type: none;
+        & a {
+            text-decoration: none;
+            color: #6F6E6E;
+            &:hover {
+                color: #EF5B70;
+            }
+        }
+    }  
+}
+.filter-list ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style-type: none;
+    column-gap: 29px;
+    margin-right: 441px;
+    padding-top: 13px;
+}
+.filter-list-item {
+    text-decoration: none;
+    color: #6F6E6E;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    &-size {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 20;
+        background-color: #fff;
+        width: 79px;
+        align-items: start;
+        margin-left: -10px;
+        margin-top: 5px;
+        & li {
+            padding: 4px 0px 6px 9px;
+        }
+        &-chekbox {
+            font-size: 14px;
+            line-height: 16px;
+            color: #6F6E6E;
+        }
+    }
+}
+.filter-list-shadow[open] .filter-list-item-size {
+    box-shadow: $box-shadow;
+}
+.filter-check {
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.title-filter {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 13px;
+}
+.filter-svg {
+    margin-left: 11px;
+}
+.filter-list-width {
+    &-tranding {
+        width: 11%;
+    }
+    &-price {
+        width: 125px;
+    }
+}
+/*---- Страница регистрации ---- */
+
+/* Блок с заголовком */
+
+.registration {
+    background-color: #F8F3F4;
+}
+.reg-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    font-weight: 400;
+    margin: 60px 0;
+}
+ /* Блок с регистрацией и описанием */
+
+@import "blocks/_registration";
+
+/*--- Страница с продуктом --- */
+
+/* Карусель с девушкой */
+
+@import "blocks/_carousel";
+
+/* описание и покупка товара */
+
+@import "blocks/_desc";
+
+/*--- Страница "Shopping cart" --- */
+
+@import "blocks/_shoping-cart";

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
 </head>
@@ -53,92 +53,135 @@
                     </li>
                 </ul>
             </div>
-            <nav class="main-nav main-nav--close">
-                <!-- main-nav--close -->
-                <div class="main-nav-box">
-                    <button class="main-nav-close"><img src="img/close-menu.svg" alt="close"></button>
-                    <p class="main-nav-title">MENU</p>
-                    <ul class="main-nav-list">
-                        <li class="main-nav-item"><a href="catalog.html" class="main-nav-link">MAN</a>
-                            <ul class="submenu-list">
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Accessories</a>
-                                </li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Bags</a></li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Denim</a></li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">T-Shirts</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-nav-item"><a href="catalog.html" class="main-nav-link">WOMAN</a>
-                            <ul class="submenu-list">
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Accessories</a>
-                                </li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Jackets & Coats</a>
-                                </li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Polos</a></li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">T-Shirts</a></li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Shirts</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-nav-item"><a href="catalog.html" class="main-nav-link">KIDS</a>
-                            <ul class="submenu-list">
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Accessories</a>
-                                </li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Jackets & Coats</a>
-                                </li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Polos</a></li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">T-Shirts</a></li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Shirts</a></li>
-                                <li class="submenu-item"><a href="product.html" class="submenu-link">Bags</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
         </div>
     </header>
-    <section class="promo">
-        <div class="wrap promo-wrap">
-            <h1 class="promo-title">
-                THE BRAND<br>
-                <span class="promo-luxerios">OF LUXERIOUS</span> <span class="text-promo-red">FASHION</span>
-            </h1>
+    <section class="arrivals">
+        <div class="wrap arrivals-wrap">
+            <article class="new-arrivals">
+                <h1>NEW ARRIVALS</h1>
+            </article>
+            <nav class="arrivals-tabs">
+                <ul>
+                    <li><a href="#">HOME /</a></li>
+                    <li><a href="#">MEN /</a></li>
+                    <li><a href="#"><span class="tab-red">NEW ARRIVALS</span></a></li>
+                </ul>
+            </nav>
         </div>
     </section>
     <main class="main">
-        <section class="categories">
-            <h2 class="hiden">Категории</h2>
-            <div class="wrap categories-wrap">
-                <div class="cat-parent">
-                    <div class="cat-child cat-item">
-                        <img class="cat-img" src="img/cat-woman.jpg" alt="photo">
-                        <p class="cat-text">30% OFF <br><span class="text-red">FOR WOMEN</span></p>
-                    </div>
-                    <div class="cat-child cat-item">
-                        <img class="cat-img" src="img/cat-man.jpg" alt="photo">
-                        <p class="cat-text">HOT DEAL
-                            <br><span class="text-red">FOR MEN</span>
-                        </p>
-                    </div>
-                    <div class="cat-child cat-item">
-                        <img class="cat-img" src="img/cat-kids.jpg" alt="photo">
-                        <p class="cat-text">NEW ARRIVALS
-                            <br><span class="text-red">FOR KIDS</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="cat-acces cat-item">
-                    <img class="cat-img cat-mobile" src="img/cat-acces.jpg" alt="photo">
-                    <br>
-                    <p class="cat-text cat-text-bot">LUXIROUS & TRENDY
-                        <br><span class="text-red">ACCESORIES</span>
-                    </p>
-                </div>
-            </div>
-        </section>
         <section class="products">
+            <h2 class="hiden">Продукты компании</h2>
             <div class="wrap products-wrap">
-                <h2 class="products-title">Fetured Items</h2>
-                <p class="products-desc">Shop for items based on what we featured in this week</p>
+                <div class="products-filter">
+                    <details class="filter-nav">
+                        <summary class="title-filter">FILTER <svg class="filter-svg" width="20" height="11"
+                                viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                                <path class="filter-svg"
+                                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                            </svg>
+                        </summary>
+                        <div class="filter-drop">
+                            <details class="filter-nav-drop">
+                                <summary class="title-filter-drop">CATEGORY
+                                    <hr class="filter-nav-drop-hr">
+                                </summary>
+                                <ul class="title-filter-drop-list">
+                                    <li><a href="#"> Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Sweaters & Knits</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Tanks</a></li>
+                                </ul>
+                            </details>
+                            <details class="filter-nav-drop">
+                                <summary class="title-filter-drop">BRAND
+                                    <hr class="filter-nav-drop-hr">
+                                </summary>
+                                <ul class="title-filter-drop-list">
+                                    <li><a href="#">Brand1</a></li>
+                                    <li><a href="#">Brand2</a></li>
+                                    <li><a href="#">Brand3</a></li>
+                                    <li><a href="#">Brand4</a></li>
+                                    <li><a href="#">Brand5</a></li>
+                                </ul>
+                            </details>
+                            <details class="filter-nav-drop">
+                                <summary class="title-filter-drop">DESIGNER
+                                    <hr class="filter-nav-drop-hr">
+                                </summary>
+                                <ul class="title-filter-drop-list">
+                                    <li><a href="#">DESIGNER1</a></li>
+                                    <li><a href="#">DESIGNER2</a></li>
+                                    <li><a href="#">DESIGNER3</a></li>
+                                    <li><a href="#">DESIGNER4</a></li>
+                                    <li><a href="#">DESIGNER5</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </details>
+                    <div class="filter-list">
+                        <ul>
+                            <li>
+                                <details class="filter-list-shadow">
+                                    <summary class="filter-list-item">TRENDING NOW <img class="filter-check"
+                                            src="img/check-filter.png" alt="check-filter">
+                                    </summary>
+                                    <ul class="filter-list-item-size filter-list-width-tranding">
+                                        <li><label class="filter-list-item-size-chekbox"><input type="checkbox">TRENDING
+                                                NOW1</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input type="checkbox">TRENDING
+                                                NOW2</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input type="checkbox">TRENDING
+                                                NOW3</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input type="checkbox">TRENDING
+                                                NOW4</label></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details class="filter-list-shadow">
+                                    <summary class="filter-list-item">SIZE <img class="filter-check"
+                                            src="img/check-filter.png" alt="check-filter">
+                                    </summary>
+                                    <ul class="filter-list-item-size">
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">XS</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">S</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">M</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">L</label></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details class="filter-list-shadow">
+                                    <summary class="filter-list-item">PRICE <img class="filter-check"
+                                            src="img/check-filter.png" alt="check-filter">
+                                    </summary>
+                                    <ul class="filter-list-item-size filter-list-width-price">
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">$0-$500</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">$500-$1000</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">$1000-$2000</label></li>
+                                        <li><label class="filter-list-item-size-chekbox"><input
+                                                    type="checkbox">$2000-$3000</label></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <ul class="products-list">
                     <li class="products-item">
                         <div class="products-overlay">
@@ -164,7 +207,7 @@
                                 Add to Cart
                             </button>
                         </div>
-                        <img src="img/item-woman-1.jpg" width="360" height="420" alt="photo">
+                        <img src="img/arri-man-1.jpg" width="360" height="420" alt="photo">
                         <article class="product-text-box"><a href="#" target="blank">
                                 <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                                 <p class="product-text">Known for her sculptural takes on traditional tailoring,
@@ -215,7 +258,7 @@
                                 Add to Cart
                             </button>
                         </div>
-                        <img src="img/item-woman-2.jpg" width="360" height="420" alt="photo">
+                        <img src="img/arri-man-2.jpg" width="360" height="420" alt="photo">
                         <article class="product-text-box"><a href="#" target="blank">
                                 <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                                 <p class="product-text">Known for her sculptural takes on traditional tailoring,
@@ -226,13 +269,64 @@
                         </article>
                     </li>
                     <li class="products-item">
-                        <!-- на будущее <div class="products-overlay">
+                        <div class="products-overlay">
                             <button class="btn-add">
-                                <img src="#" alt="#">
+                                <img class="btn-add-svg" src="img/basket-item.svg" alt="basket">
+                                Add to Cart
                             </button>
-                        </div> -->
-                        <!--<img src="img/item-woman-3.jpg" width="360" height="420" alt="photo"> -->
-                        <video src="media/fashion.mp4" width="360" height="420" controls></video>
+                        </div>
+                        <img src="img/arri-man-3.jpg" width="360" height="420" alt="photo">
+                        <article class="product-text-box"><a href="#" target="blank">
+                                <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                                <p class="product-text">Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="product-price">$52.00</p>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-overlay">
+                            <button class="btn-add">
+                                <img class="btn-add-svg" src="img/basket-item.svg" alt="basket">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <img src="img/arri-man-4.jpg" width="360" height="420" alt="photo">
+                        <article class="product-text-box"><a href="#" target="blank">
+                                <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                                <p class="product-text">Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="product-price">$52.00</p>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-overlay">
+                            <button class="btn-add">
+                                <img class="btn-add-svg" src="img/basket-item.svg" alt="basket">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <img src="img/arri-man-5.jpg" width="360" height="420" alt="photo">
+                        <article class="product-text-box"><a href="#" target="blank">
+                                <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                                <p class="product-text">Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="product-price">$52.00</p>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-overlay">
+                            <button class="btn-add">
+                                <img class="btn-add-svg" src="img/basket-item.svg" alt="basket">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <img src="img/arri-man-6.jpg" width="360" height="420" alt="photo">
                         <article class="product-text-box"><a href="#" target="blank">
                                 <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                                 <p class="product-text">Known for her sculptural takes on traditional tailoring,
@@ -243,9 +337,20 @@
                         </article>
                     </li>
                 </ul>
-                <button class="products-but">Browse All Product</button>
             </div>
         </section>
+        <div class="pagination">
+            <nav class="pagination-list">
+                <a href="#"><img src="img/pag-left.svg" alt="left"></a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6.....20</a>
+                <a href="#"><img src="img/pag-right.svg" alt="right"></a>
+            </nav>
+        </div>
     </main>
     <section class="fearures">
         <div class="wrap fearures-wrap">
