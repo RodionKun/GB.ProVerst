@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Product page</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
 </head>
@@ -110,16 +110,58 @@
                 <div class="description-filter-list">
                     <ul>
                         <li>
-                            <a class="description-filter-list-item" href="#">CHOOSE COLOR<img
-                                    class="description-filter-check" src="img/check-filter.png" alt="check-filter">
-                            </a>
+                            <details class="filter-list-shadow">
+                                <summary class="filter-list-item">CHOOSE COLOR<img class="filter-check"
+                                        src="img/check-filter.png" alt="check-filter">
+                                </summary>
+                                <ul class="filter-list-item-size desc-list-item-color">
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">RED</label>
+                                    </li>
+                                    <li><label class="filter-list-item-size-chekbox"><input
+                                                type="checkbox">GREEN</label>
+                                    </li>
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">BLUE</label>
+                                    </li>
+                                    <li><label class="filter-list-item-size-chekbox"><input
+                                                type="checkbox">WHITE</label>
+                                    </li>
+                                </ul>
+                            </details>
                         </li>
-                        <li><a class="description-filter-list-item" href="#">CHOOSE SIZE <img
-                                    class="description-filter-check" src="img/check-filter.png" alt="check-filter">
-                            </a></li>
-                        <li><a class="description-filter-list-item" href="#">QUANTITY<img
-                                    class="description-filter-check" src="img/check-filter.png" alt="check-filter">
-                            </a></li>
+                        <li>
+                            <details class="filter-list-shadow">
+                                <summary class="filter-list-item">CHOOSE SIZE<img class="filter-check"
+                                        src="img/check-filter.png" alt="check-filter">
+                                </summary>
+                                <ul class="filter-list-item-size">
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">XS</label>
+                                    </li>
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">S</label>
+                                    </li>
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">M</label>
+                                    </li>
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">L</label>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="filter-list-shadow">
+                                <summary class="filter-list-item">QUANTITY<img class="filter-check"
+                                        src="img/check-filter.png" alt="check-filter">
+                                </summary>
+                                <ul class="filter-list-item-size desc-list-item-quant">
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">
+                                            1</label></li>
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">
+                                            2</label></li>
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">
+                                            3</label></li>
+                                    <li><label class="filter-list-item-size-chekbox"><input type="checkbox">
+                                            4</label></li>
+                                </ul>
+                            </details>
+                        </li>
                     </ul>
                 </div>
                 <button class="description-buy">
