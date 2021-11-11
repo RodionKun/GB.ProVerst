@@ -80,8 +80,11 @@
                             d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z" />
                     </svg>
                 </button>
-                <div class="item active">
-                    <img src="img/product-women.jpg" alt="photo">
+                <div class="item-active">
+                    <picture>
+                        <source media="(max-width: 775px)" srcset="img/product-woman-mobile.jpg" width="280">
+                        <img class="item-active-img" src="img/product-women.jpg" alt="photo">
+                    </picture>
                 </div>
                 <button class="carousel-but">
                     <svg class="carousel-svg" width="13" height="23" viewBox="0 0 13 23"
@@ -176,7 +179,7 @@
         </section>
         <section class="products">
             <div class="wrap product-margin">
-                <ul class="products-list">
+                <ul class="products-list catalog-product">
                     <li class="products-item">
                         <div class="products-overlay">
                             <button class="btn-add">

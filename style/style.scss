@@ -59,6 +59,9 @@
         width: 327px;
         margin: 11px 0 -11px -11px;
     }
+    @media (max-width: $width-mobile) {
+        width: auto;
+    }
 }
 .filter-nav[open] {
     background-color: #fff;
@@ -66,6 +69,9 @@
     box-shadow: $box-shadow;
     position: relative;
     display: flex;
+    @media (max-width: $width-mobile) {
+        box-shadow: none;
+    }
 }
 .filter-nav[open] .title-filter {
     color: #EF5B70;
@@ -75,9 +81,13 @@
 .products-filter {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     margin-bottom: 64px;
     margin-top: 51px;
+    @media (max-width: $width-tablet) {
+        margin-bottom: 40px;
+        margin-top: 24px;
+        justify-content: space-between;
+    }
 }
 .title-filter {
     padding-left: 16px;
@@ -90,6 +100,9 @@
     display: inline-block;
     background-color: #fff;
     z-index: 30;
+    @media (max-width: $width-tablet) {
+        padding: 0;
+    }
 }
 .filter-drop {
     position: absolute;
@@ -98,6 +111,9 @@
     background-color: #fff;
     padding-bottom: 16px;
     box-shadow: $box-shadow;
+    @media (max-width: $width-mobile) {
+        width: auto;
+    }
 }
 .title-filter-drop {
     font-size: 14px;
@@ -131,14 +147,16 @@
 }
 .filter-list ul {
     display: flex;
-    justify-content: space-around;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
     list-style-type: none;
     column-gap: 29px;
-    margin-right: 441px;
+    margin-left: 30px;
     padding-top: 13px;
+    @media (max-width: $width-mobile) {
+        column-gap: 23px;
+    }
 }
 .filter-list-item {
     text-decoration: none;
@@ -158,6 +176,10 @@
         align-items: start;
         margin-left: -10px;
         margin-top: 5px;
+        @media (max-width: $width-mobile) {
+            width: 14vw;
+            margin-left: -63px;
+        }
         & li {
             padding: 4px 0px 6px 9px;
         }
@@ -167,29 +189,63 @@
             color: #6F6E6E;
         }
     }
+    @media (max-width: $width-mobile) {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 .filter-list-shadow[open] .filter-list-item-size {
     box-shadow: $box-shadow;
+    margin: 0 auto;
+    @media (max-width: $width-mobile) {
+        right: 45px;
+    }
 }
 .filter-check {
     padding-left: 10px;
     padding-bottom: 3px;
+    @media (max-width: $width-mobile) {
+        padding: 0 0 0 6px;
+    }
 }
 .title-filter {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     padding-top: 13px;
+    @media (max-width: $width-mobile) {
+        background: none;
+    }
 }
 .filter-svg {
     margin-left: 11px;
+    @media (max-width: $width-mobile) {
+        margin: 0;
+        width: 37px;
+        height: 25px;
+    }
 }
 .filter-list-width {
     &-tranding {
         width: 11%;
+        @media (max-width: $width-tablet) {
+            width: 30vw;
+        }
     }
     &-price {
         width: 125px;
+    }
+}
+.catalog-tablet {
+    @media (max-width: $width-tablet) {
+        .products-item:nth-child(3) {
+            display: none;
+        } 
+    }
+}
+.hiden-mobile {
+    @media (max-width: $width-mobile) {
+        display: none;
     }
 }
 /*---- Страница регистрации ---- */
@@ -205,6 +261,9 @@
     color: #F16D7F;
     font-weight: 400;
     margin: 60px 0;
+    @media (max-width: $width-mobile) {
+        text-align: center;
+    }
 }
  /* Блок с регистрацией и описанием */
 
