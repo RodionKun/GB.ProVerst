@@ -1101,8 +1101,13 @@ body {
   cursor: pointer;
   display: inline-block;
   border-left: 5px solid #EF5B70;
-  padding: 11px 0 10px 11px;
+  padding: 11px 66% 10px 11px;
   margin: 16px 0 0 17px;
+  border-bottom: 2px solid #EBEBEB;
+}
+
+.title-filter-drop-brand {
+  padding-right: 72%;
 }
 
 .filter-nav-drop[open] .title-filter-drop {
